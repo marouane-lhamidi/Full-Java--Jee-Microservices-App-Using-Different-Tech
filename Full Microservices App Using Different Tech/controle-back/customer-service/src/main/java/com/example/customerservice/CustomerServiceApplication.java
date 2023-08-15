@@ -15,17 +15,17 @@ public class CustomerServiceApplication {
 		SpringApplication.run(CustomerServiceApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner start(CustomerRepository customerRepository, RepositoryRestConfiguration restConfiguration){
-		restConfiguration.exposeIdsFor(Customer.class);
-		return args -> {
-			customerRepository.save(new Customer(null, "marouane", "marouane.lhamidi@gmail.com" ));
-			customerRepository.save(new Customer(null, "hamza", "hamza.lhamidi@gmail.com" ));
-			customerRepository.save(new Customer(null, "soufiane", "soufiane.lhamidi@gmail.com" ));
-
-			customerRepository.findAll().forEach(customer -> {
-				System.out.println(customer.toString());
-			});
-		};
-	}
+//	@Bean
+//	CommandLineRunner start(CustomerRepository customerRepository, RepositoryRestConfiguration restConfiguration){
+//		restConfiguration.exposeIdsFor(Customer.class);
+//		return args -> {
+//			customerRepository.save(new Customer(null, "marouane", "marouane.lhamidi@gmail.com" ));
+//			customerRepository.save(new Customer(null, "hamza", "hamza.lhamidi@gmail.com" ));
+//			customerRepository.save(new Customer(null, "soufiane", "soufiane.lhamidi@gmail.com" ));
+//
+//			customerRepository.findAll().forEach(customer -> {
+//				System.out.println(customer.toString());
+//			});
+//		};
+//	}
 }

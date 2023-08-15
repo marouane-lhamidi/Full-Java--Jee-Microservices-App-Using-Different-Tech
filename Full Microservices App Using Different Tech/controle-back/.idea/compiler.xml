@@ -16,15 +16,6 @@
         <module name="billing-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="billing-service" target="11" />
-      <module name="billing-supplier-service" target="11" />
-      <module name="customer-service" target="11" />
-      <module name="demo-spring-cloud-stream-kafka" target="11" />
-      <module name="eureka-discovery" target="11" />
-      <module name="gateway-service" target="11" />
-      <module name="product-service" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
